@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 450px;
+}
+.fade-carousel .carousel-inner .item {
+    height: 450px;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 10px;
+    border:2px solid #fff;
+    opacity: .7;
+	width: 15px;
+  height: 15px;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 55%;
+    left: 42%;
+    z-index: 3;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+
+h1.logo{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 330px;
+    visibility: hidden;
+}
+
+h1.logo img{
+    width: 100%;
+}
+
+.hero h2 {
+    font-size: 3em;    
+    margin: 0;
+    padding: 0 0 25px 0;
+	color:#fff;
+}
+.hero h3{
+	font-size:2.5em;
+	margin:0;padding:0;	color:#fff;
+	}
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+.link-wrapper {
+    position: absolute;
+    top: 345px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 840px;
+    height: 93px;
+/*    border: 1px solid blue;*/
+}
+
+.link-wrapper a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 328px;
+    height: 93px;
+    background: url(../images/pc_eva_btn.png) no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+/*    border: 1px solid green;*/
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 450px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-color: #e5071e;
+/*  background-image: url(../images/pc_main_bg.png); */
+  background-image: url(../images/pc_main_bg.jpg);  
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }
+}
+@media screen and (max-width: 840px){
+/*
+    .fade-carousel {
+        position: relative;
+        height: 360px;
+    }
+    .fade-carousel .carousel-inner .item {
+        height: 360px;
+    }
+*/
+    
+    
+    .fade-carousel .slides .slide-1 {
+      background-image: url(../images/sp_main_bg.jpg); 
+    }
+    .fade-carousel .slides .slide-1,
+    .fade-carousel .slides .slide-2,
+    .fade-carousel .slides .slide-3 {
+        height: 360px !important;
+    }
+    .fade-carousel {
+        height: 360px !important;
+    }
+    
+    h1.logo {
+        top: 30%;
+        width: 270px;
+    }
+    
+    .link-wrapper {
+        width: 225px;
+        top: 320px;
+        z-index: 99;
+    }
+
+    .link-wrapper a {
+        right: 0;
+        top: 0;
+        margin: auto;
+        width: 225px;
+        height: 90px;
+        background: url(../images/sp_eva_btn.png) no-repeat;
+        background-size: contain;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    .hero h2 { font-size: 1.5em; padding-bottom:12px;} 
+	.hero h3 { font-size: 1em; }  
+	.hero { top:64%;left:100px; }
+	.innerpage_banner h2{font-size: 1.5em;}
+	.innerpage_banner h3 { font-size: 1.5em; } 
+	.innerpage_banner{min-height:65vh;}   
+	.innerpage_banner .col-md-6{bottom:1vw;}
+
+    .fade-carousel .slides .slide-1,
+    .fade-carousel .slides .slide-2,
+    .fade-carousel .slides .slide-3 {
+        height: 300px !important;
+    }
+    .fade-carousel {
+        height: 300px !important;
+    }
+
+    h1.logo {
+        top: 25%;
+        width: 240px;
+    }
+    .link-wrapper {
+        width: 225px;
+        top: 265px;
+        z-index: 99;
+    }
+
+    .link-wrapper a {
+        right: 0;
+        top: 0;
+        margin: auto;
+        width: 200px;
+        height: 80px;
+        background: url(../images/sp_eva_btn.png) no-repeat;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .fade-carousel .slides .slide-1,
+    .fade-carousel .slides .slide-2,
+    .fade-carousel .slides .slide-3 {
+        height: 230px !important;
+    }
+    .fade-carousel {
+        height: 230px !important;
+    }
+
+    h1.logo {
+        top: 15%;
+        width: 180px;
+    }
+    .link-wrapper {
+        width: 225px;
+        top: 195px;
+        z-index: 99;
+    }
+
+    .link-wrapper a {
+        right: 0;
+        top: 0;
+        margin: auto;
+        width: 200px;
+        height: 80px;
+        background: url(../images/sp_eva_btn.png) no-repeat;
+        background-size: contain;
+    }
+}

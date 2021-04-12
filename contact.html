@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="jp">
+<head>
+<title>お問い合わせ | Game Smile | 株式会社Game Smile</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<!-- Favicons-->
+<link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+<link rel="manifest" href="./fav/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--bootstrap-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+<!-- css -->
+<link href="css/swiper.min.css" rel="stylesheet">
+<link href="css/style.css?r=6M0kydqxPW" rel="stylesheet">
+<link href="css/animation.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!--header starts-->
+<div class="top_header">
+  <nav id="header" class="navbar">
+    <div id="header-container" class="navbar-container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed nav-button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"></button>
+        <a id="brand" class="navbar-brand fixed-theme" href="index.html"><img src="images/logo-gs.png" class="img-responsive"></a>
+				<div id="mini-nav" class="">
+					<a href="corporate.html#map" class="access">アクセス</a>
+					<!-- <div class="input-group lang-switch">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm active" data-toggle="lang" data-title="jp">日本語</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="lang" data-title="cn">中国語</a>
+    				</div>
+    				<input type="hidden" name="lang" id="lang">
+    			</div> -->
+        </div>
+			</div>
+
+			<div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav row">
+          <li class="col-sm-2" id="nav-1"><a href="corporate.html">会社情報</a></li>
+          <li class="col-sm-2" id="nav-2"><a href="news.html">お知らせ</a></li>
+          <li class="col-sm-2" id="nav-3"><a href="create.html">サービス</a></li>
+          <li class="col-sm-2" id="nav-4"><a href="recruit.html">採用情報</a></li>
+          <li class="col-sm-2 active" id="nav-5"><a href="contact.html">お問い合わせ</a></li>
+          <li class="col-sm-2" id="nav-6"><a href="smile.html">スマイル</a></li>
+        </ul>
+      </div>
+      <!-- /.nav-collapse -->
+
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.navbar -->
+</div>
+<!--header ends-->
+<!--content starts-->
+
+<div class="section section-cover contact-cover">contact</div>
+
+<ul class="create-tab menu-tab row">
+  <li class="active col-xs-6 col-md-3"><a data-toggle="tab" href="#contact1">ビジネス</a></li>
+	<li class="col-xs-6 col-md-3"><a data-toggle="tab" href="#contact2">デザイン・シナリオ制作</a></li>
+  <li class="col-xs-6 col-md-3"><a data-toggle="tab" href="#contact3">採用</a></li>
+  <li class="col-xs-6 col-md-3"><a data-toggle="tab" href="#contact4">その他</a></li>
+</ul>
+
+<div class="tab-content container">
+  <div id="contact1" class="tab-pane fade in active">
+		<h3 class="ml-5">ビジネスに関するお問い合わせ</h3>
+		<form id="game-form">
+			<input type="hidden" id="game-form-category" value="ビジネス">
+			<div class="form-group">
+		    <label for="conpany">会社名</label>
+		    <input type="text" class="form-control" id="game-form-company" placeholder="" width="20">
+		  </div>
+		  <div class="form-group">
+		    <label for="name">氏名<span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="game-form-name" placeholder="" required>
+		  </div>
+			<div class="form-group">
+		    <label for="kana">フリガナ<span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="game-form-kana" placeholder="" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">メールアドレス<span class="text-danger">*</span></label>
+		    <input type="email" class="form-control" id="game-form-email" placeholder="" required>
+		  </div>
+			<div class="form-group">
+		    <label for="memo">お問い合わせ内容<span class="text-danger">*</span></label>
+		    <textarea class="form-control" id="game-form-message" rows="7" placeholder="" required></textarea>
+		  </div>
+      <div class="alert alert-info game-form-alert">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>お問い合わせメールを送信完了しました!</strong> <br />2営業日以内にご返事させていただきます。それまで少々お待ち下さい。
+      </div>
+		  <button type="submit" class="btn btn-primary">送信</button>
+		</form>
+
+  </div>
+  <div id="contact2" class="tab-pane fade">
+		<h3 class="ml-5">デザイン・シナリオ制作に関するお問い合わせ</h3>
+    <form id="design-form">
+			<input type="hidden" id="design-form-category" value="デザイン・シナリオ制作">
+			<div class="form-group">
+		    <label for="conpany">会社名</label>
+		    <input type="text" class="form-control" id="design-form-company" placeholder="" width="20">
+		  </div>
+		  <div class="form-group">
+		    <label for="name">氏名<span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="design-form-name" placeholder="" required>
+		  </div>
+			<div class="form-group">
+		    <label for="kana">フリガナ<span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="design-form-kana" placeholder="" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">メールアドレス<span class="text-danger">*</span></label>
+		    <input type="email" class="form-control" id="design-form-email" placeholder="" required>
+		  </div>
+			<div class="form-group">
+		    <label for="memo">お問い合わせ内容<span class="text-danger">*</span></label>
+		    <textarea class="form-control" id="design-form-message" rows="7" placeholder="" required></textarea>
+		  </div>
+      <div class="alert alert-info design-form-alert">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>お問い合わせメールを送信完了しました!</strong> <br />2営業日以内にご返事させていただきます。それまで少々お待ち下さい。
+      </div>
+		  <button type="submit" class="btn btn-primary">送信</button>
+		</form>
+  </div>
+  <div id="contact3" class="tab-pane fade">
+    <h3 class="ml-5">採用に関するお問い合わせ</h3>
+    <form id="recruit-form">
+			<input type="hidden" id="recruit-form-category" value="採用">
+			<div class="form-group">
+		    <label for="conpany">会社名</label>
+		    <input type="text" class="form-control" id="recruit-form-company" placeholder="" width="20">
+		  </div>
+		  <div class="form-group">
+		    <label for="name">氏名<span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="recruit-form-name" placeholder="" required>
+		  </div>
+			<div class="form-group">
+		    <label for="kana">フリガナ<span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="recruit-form-kana" placeholder="" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">メールアドレス<span class="text-danger">*</span></label>
+		    <input type="email" class="form-control" id="recruit-form-email" placeholder="" required>
+		  </div>
+			<div class="form-group">
+		    <label for="memo">お問い合わせ内容<span class="text-danger">*</span></label>
+		    <textarea class="form-control" id="recruit-form-message" rows="7" placeholder="" required></textarea>
+		  </div>
+      <div class="alert alert-info recruit-form-alert">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>お問い合わせメールを送信完了しました!</strong> <br />2営業日以内にご返事させていただきます。それまで少々お待ち下さい。
+      </div>
+		  <button type="submit" class="btn btn-primary">送信</button>
+		</form>
+  </div>
+  <div id="contact4" class="tab-pane fade">
+    <h3 class="ml-5">その他に関するお問い合わせ</h3>
+    <form id="other-form">
+			<input type="hidden" id="other-form-category" value="その他">
+			<div class="form-group">
+		    <label for="conpany">会社名</label>
+		    <input type="text" class="form-control" id="other-form-company" placeholder="" width="20">
+		  </div>
+		  <div class="form-group">
+		    <label for="name">氏名<span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="other-form-name" placeholder="" required>
+		  </div>
+			<div class="form-group">
+		    <label for="kana">フリガナ<span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="other-form-kana" placeholder="" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">メールアドレス<span class="text-danger">*</span></label>
+		    <input type="email" class="form-control" id="other-form-email" placeholder="" required>
+		  </div>
+			<div class="form-group">
+		    <label for="memo">お問い合わせ内容<span class="text-danger">*</span></label>
+		    <textarea class="form-control" id="other-form-message" rows="7" placeholder="" required></textarea>
+		  </div>
+      <div class="alert alert-info other-form-alert">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <strong>お問い合わせメールを送信完了しました!</strong> <br />2営業日以内にご返事させていただきます。それまで少々お待ち下さい。
+      </div>
+		  <button type="submit" class="btn btn-primary">送信</button>
+		</form>
+  </div>
+
+</div>
+
+<!--content ends-->
+<!--footer starts-->
+<div class="footer">
+	<div class="container">
+        <div class="row clearfix">
+						<!-- <div class="lang-switch-footer"> <a href="javascript:return 0">Japanese</a> | <a href="javascript:return 0">Chinese</a> </div> -->
+            <div class="footernav">
+                <ul>
+									<li class="sp-off"><a href="corporate.html">会社概要</a></li>
+                  <li class="sp-off"><a href="news.html">お知らせ</a></li>
+                  <li class="sp-off"><a href="create.html">サービス</a></li>
+                  <li class="sp-off"><a href="recruit.html">採用情報</a></li>
+									<li class="sp-off"><a href="contact.html">お問い合わせ</a></li>
+									<li><a href="about.html">このサイトについて</a></li>
+									<li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+
+            <div class="sns-buttons">
+              <a href="https://twitter.com/GSmitter_Mate" target="_blank" class="sns-twitter">Twitter</a>
+              <a href="https://www.youtube.com/channel/UCMZlWOZpYfbVUGgkN41WWiw" target="_blank" class="sns-youtube">Youtube</a>
+            </div>
+
+            <p class="copyright">
+                <span>&copy;GameSmile Co.,Ltd </span>
+            </p>
+
+        </div>
+    </div>
+</div>
+<!--footer ends-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+$(document).ready(function() {
+var url = document.location.toString();
+  if (url.match('#')) {
+      $('.create-tab a[href="#' + url.split('#')[1] + '"]').tab('show');
+  }
+});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148595041-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148595041-1');
+</script>
+</body>
+</html>

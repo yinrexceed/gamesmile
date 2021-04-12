@@ -1,1 +1,1 @@
-# gamesmile
+# gamesmile.jp 公式サイト 
